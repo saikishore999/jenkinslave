@@ -1,0 +1,10 @@
+[master]
+7ba2808d972c.mylabserver.com
+
+[one_slave]
+7ba2808d971c.mylabserver.com ansible_ssh_user=cloud_user ansible_ssh_pass="Venkat@123" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+
+[many_slaves]
+slave1.example.com slave_agent_name=slave1
+slave2.example.com slave_agent_name=slave2

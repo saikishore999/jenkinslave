@@ -1,0 +1,13 @@
+- name: "Install jenkins-slave on remote hosts using created 'Username with password' credentials"
+  hosts: one_slave
+
+  vars:
+    master_host: 172.31.35.107
+    slave_linux_jenkins_cred_id: jenkins-slave_creds
+    slave_linux_jenkins_username: "cloud_user"
+    slave_linux_jenkins_password: "Venkat@123"
+    slave_agent_name: linux_slave_1
+
+  roles:
+   # - role: lean_delivery.jenkins_slave
+    - role: ansible-role-jenkins-slave

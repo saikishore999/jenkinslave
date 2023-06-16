@@ -7,6 +7,7 @@ pipeline
             steps
             {
                 echo "jenkins slave"
+                echo "slave"
             }
         }
     }
